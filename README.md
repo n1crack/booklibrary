@@ -19,3 +19,9 @@ git clone https://github.com/n1crack/booklibrary.git <folder_name>
 composer install
 
 ```
+
+
+```env
+# set DATABASE_URL variable in your ".env" file:
+DATABASE_URL="sqlite:///%kernel.project_dir%/var/data.db"
+```
