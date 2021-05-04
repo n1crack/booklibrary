@@ -17,7 +17,6 @@ class BookCountCacheManager
 
   public function get($categories)
   {
-    dd($this->cache);
     if (!$this->cache->hasItem('books_count')) {
 
       $temp = [];
