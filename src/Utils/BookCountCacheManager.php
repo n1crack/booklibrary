@@ -10,13 +10,14 @@ class BookCountCacheManager
 
   private $cache;
 
-  public function __construct(CacheItemPoolInterface $cache)
+  public function __construct(CacheItemPoolInterface $cacheMyRedis)
   {
-    $this->cache = $cache;
+    $this->cache = $cacheMyRedis;
   }
 
   public function get($categories)
   {
+    dd($this->cache);
     if (!$this->cache->hasItem('books_count')) {
 
       $temp = [];
